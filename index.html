@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Giovanni Lemos Barcelos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #38bdf8;
+            margin-top: 16px;
+            border-radius: 2px;
+        }
+        .nav-link.active {
+            color: #38bdf8;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-300">
+
+    <!-- Header & Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white">Giovanni L. Barcelos</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#sobre" class="nav-link text-gray-300 hover:text-sky-400 transition-colors duration-300">Sobre</a>
+                <a href="#experiencia" class="nav-link text-gray-300 hover:text-sky-400 transition-colors duration-300">Experiência</a>
+                <a href="#projetos" class="nav-link text-gray-300 hover:text-sky-400 transition-colors duration-300">Projetos</a>
+                <a href="#habilidades" class="nav-link text-gray-300 hover:text-sky-400 transition-colors duration-300">Habilidades</a>
+                <a href="#contato" class="nav-link text-gray-300 hover:text-sky-400 transition-colors duration-300">Contato</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#sobre" class="block py-2 text-gray-300 hover:text-sky-400">Sobre</a>
+            <a href="#experiencia" class="block py-2 text-gray-300 hover:text-sky-400">Experiência</a>
+            <a href="#projetos" class="block py-2 text-gray-300 hover:text-sky-400">Projetos</a>
+            <a href="#habilidades" class="block py-2 text-gray-300 hover:text-sky-400">Habilidades</a>
+            <a href="#contato" class="block py-2 text-gray-300 hover:text-sky-400">Contato</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Home Section -->
+        <section id="home" class="min-h-[80vh] flex items-center">
+            <div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">Giovanni Lemos Barcelos</h1>
+                <p class="text-xl md:text-2xl text-sky-400 mt-4">Cientista de Dados com mentalidade de Arquiteto de Soluções</p>
+                <p class="mt-6 max-w-3xl text-gray-400">
+                    Transformo problemas de negócio complexos em soluções de dados claras, eficientes e escaláveis, construindo sistemas que geram insights contínuos e valor duradouro.
+                </p>
+                <div class="mt-8">
+                    <a href="#projetos" class="bg-sky-500 text-white font-semibold px-8 py-3 rounded-lg hover:bg-sky-600 transition-all duration-300">Meus Projetos</a>
+                    <a href="https://www.linkedin.com/in/giovanni-barcelos-600241206/" target="_blank" class="ml-4 text-sky-400 font-semibold hover:underline">
+                        LinkedIn &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="py-20">
+            <h2 class="section-title text-3xl font-bold text-white mb-12">Sobre Mim</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Minha Abordagem</h3>
+                    <p class="text-gray-400 mb-6">
+                        Minha abordagem se baseia em três pilares: **Arquitetura de Soluções**, projetando sistemas elegantes e escaláveis; **Visão Sistêmica**, conectando a tecnologia ao impacto no negócio; e **Comprometimento Intelectual**, buscando a causa raiz dos problemas para garantir soluções definitivas.
+                    </p>
+                    <p class="text-gray-400">
+                        Utilizo um arsenal técnico que inclui Python, SQL, MLOps e arquitetura de nuvem (GCP, Docker, Kubernetes) para garantir que meus projetos saiam do papel e operem com eficiência no mundo real.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-semibold text-white mb-4">Competências (Soft Skills)</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-sky-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-gray-200">Resolução de Problemas Complexos:</strong> Habilidade de decompor desafios de negócio em soluções de dados funcionais.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-sky-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-gray-200">Pensamento Estratégico:</strong> Capacidade de alinhar soluções técnicas aos objetivos da empresa para gerar valor duradouro.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 text-sky-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-gray-200">Arquitetura de Soluções:</strong> Experiência em projetar sistemas de dados garantindo escalabilidade e governança.</span>
+                        </li>
+                         <li class="flex items-start">
+                            <svg class="w-5 h-5 text-sky-400 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            <span><strong class="text-gray-200">Proatividade e Automação:</strong> Iniciativa para identificar ineficiências e desenvolver soluções que otimizam processos.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experiencia" class="py-20">
+            <h2 class="section-title text-3xl font-bold text-white mb-12">Experiência Profissional</h2>
+            <div class="space-y-12 relative border-l-2 border-gray-700 pl-10">
+                <!-- Mills -->
+                <div class="relative">
+                    <div class="absolute -left-[49px] top-1.5 h-4 w-4 rounded-full bg-sky-400"></div>
+                    <p class="text-sm text-gray-400">Março 2025 - Atual</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Analista de Dados | Mills</h3>
+                    <ul class="mt-4 space-y-3 text-gray-400 list-disc list-inside">
+                        <li>**Desenvolvimento de Dashboards Estratégicos em Power BI:** Idealizei e implementei dashboards executivos para liderança, centralizando KPIs de manutenção e produtividade.</li>
+                        <li>**Automação com Python:** Criei um script que eliminou 100% da intervenção manual na atualização de status de peças, liberando aprox. 80 horas/mês da equipe.</li>
+                        <li>**Participação em Projeto de Data Lakehouse:** Envolvido no desenvolvimento da plataforma de dados corporativa, aplicando a arquitetura Medallion (Bronze, Silver, Gold).</li>
+                        <li>**ETL:** Extraí, limpei e consolidei dados de fontes heterogêneas (SAP, planilhas) usando Python (Pandas) e VBA.</li>
+                    </ul>
+                </div>
+                <!-- Imperador Pescados -->
+                <div class="relative">
+                    <div class="absolute -left-[49px] top-1.5 h-4 w-4 rounded-full bg-sky-400"></div>
+                    <p class="text-sm text-gray-400">Novembro 2024</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Analista de Dados Freelancer | Imperador Pescados</h3>
+                     <ul class="mt-4 space-y-3 text-gray-400 list-disc list-inside">
+                        <li>Desenvolvi dashboards em Power BI para visualizar tendências de vendas e perfis de clientes.</li>
+                        <li>Realizei análises de cluster para segmentar o comportamento de compra, gerando recomendações para otimização de marketing.</li>
+                    </ul>
+                </div>
+                <!-- Clínica Cogniser -->
+                <div class="relative">
+                    <div class="absolute -left-[49px] top-1.5 h-4 w-4 rounded-full bg-sky-400"></div>
+                    <p class="text-sm text-gray-400">Dezembro 2024</p>
+                    <h3 class="text-xl font-bold text-white mt-1">Analista de Dados Freelancer | Clínica de Neuropsicologia Cogniser</h3>
+                     <ul class="mt-4 space-y-3 text-gray-400 list-disc list-inside">
+                        <li>Analisei dados de vendas e despesas para monitorar métricas financeiras chave.</li>
+                        <li>Propus recomendações para otimização do fluxo de caixa e controle de despesas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projetos" class="py-20">
+            <h2 class="section-title text-3xl font-bold text-white mb-12">Projetos Relevantes</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-2xl hover:shadow-sky-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Ponto Futuro (ClickBus Challenge)</h3>
+                    <p class="mt-2 text-gray-400">Plataforma de inteligência de dados para decodificar comportamento, prever compras e recomendar trechos para a ClickBus.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Python</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Scikit-learn</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Streamlit</span>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-2xl hover:shadow-sky-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Plataforma de Chatbot Transacional</h3>
+                    <p class="mt-2 text-gray-400">Arquitetura de solução de chatbot automatizado para delivery, orquestrando o ciclo completo de venda via WhatsApp.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">n8n</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Supabase</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Google Gemini</span>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-2xl hover:shadow-sky-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Plataforma de Gamificação "Mark"</h3>
+                    <p class="mt-2 text-gray-400">Arquitetura de solução para uma plataforma SaaS B2B focada em engajamento estudantil através de gamificação.</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">AWS</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Serverless</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">React</span>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="bg-gray-800 rounded-lg p-6 hover:shadow-2xl hover:shadow-sky-500/20 hover:-translate-y-2 transition-all duration-300">
+                    <h3 class="text-xl font-bold text-white">Análise de Dados de Marketing</h3>
+                    <p class="mt-2 text-gray-400">Análise de investimento em marketing para mensurar o ROI e construção de modelo de regressão para prever retorno em vendas (R² de 0.87).</p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Pandas</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Seaborn</span>
+                        <span class="bg-gray-700 text-xs font-semibold px-2.5 py-1 rounded-full">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Education Section -->
+        <section id="habilidades" class="py-20">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="section-title text-3xl font-bold text-white mb-12">Habilidades Técnicas</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-white">Linguagens & Bibliotecas</h3>
+                            <p class="text-gray-400">Python (Pandas, NumPy, Scikit-learn, PyTorch), SQL, Bash, VBA, DAX.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white">Ferramentas & Plataformas</h3>
+                            <p class="text-gray-400">Power BI, Excel, MySQL, PostgreSQL, MongoDB, Git/GitHub, Jupyter, VS Code.</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-white">Cloud & MLOps</h3>
+                            <p class="text-gray-400">AWS (básico), GCP (básico), Docker, Kubernetes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="section-title text-3xl font-bold text-white mb-12">Formação</h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-sm text-sky-400">Fev 2025 - Dez 2026 (Previsto)</p>
+                            <h3 class="text-lg font-semibold text-white mt-1">Tecnólogo em Data Science</h3>
+                            <p class="text-gray-400">FIAP (Fundação Instituto de Administração Paulista)</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-sm text-sky-400">Fev 2020 - Dez 2022</p>
+                            <h3 class="text-lg font-semibold text-white mt-1">Ensino Médio com Técnico em Logística</h3>
+                            <p class="text-gray-400">ETEC Vasco Antônio Venchiarutti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contato" class="py-20 text-center">
+            <h2 class="section-title text-3xl font-bold text-white mb-4 inline-block">Vamos Conversar</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-8">
+                Estou em busca de uma oportunidade para aplicar minha mentalidade de arquiteto em desafios reais de dados e sistemas. Se sua empresa valoriza soluções profundas e bem-estruturadas, entre em contato.
+            </p>
+            <a href="mailto:giovanni.barcelos13@gmail.com" class="bg-sky-500 text-white font-semibold px-10 py-4 rounded-lg hover:bg-sky-600 transition-all duration-300 text-lg">
+                Enviar E-mail
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/50">
+        <div class="container mx-auto px-6 py-6 text-center text-gray-400">
+            <p>&copy; 2025 Giovanni Lemos Barcelos. Todos os direitos reservados.</p>
+            <p class="text-sm mt-2">Desenvolvido com Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Active navigation link highlighting
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
